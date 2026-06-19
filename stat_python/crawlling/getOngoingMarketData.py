@@ -3,9 +3,11 @@ from py_clob_client.client import ClobClient
 
 def get_official_markets():
     # Polymarket 공식 오픈 API 실시간 주소
-    host = "https://polymarket.com"
+    # 근데 자꾸 접근 막힘
+    host = "https://google.com"
     
     print("🔄 Polymarket 공식 오픈 API 라이브러리로 데이터 요청 중...")
+    print("제발 그만 막혀라...")
     try:
         # 공식 클라이언트 객체 생성 (조회용이므로 지갑 정보 생략)
         client = ClobClient(host=host)
